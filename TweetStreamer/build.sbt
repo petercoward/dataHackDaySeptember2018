@@ -9,6 +9,7 @@ val logbackVersion = "1.2.3"
 val loggingScala = "com.typesafe.scala-logging" %% "scala-logging" % scalaLoggingVersion
 val loggingLogback = "ch.qos.logback" % "logback-classic" % logbackVersion
 val akkaStreamsV = "2.5.6"
+val awsV = "1.11.376"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream" % akkaStreamsV,
@@ -18,5 +19,7 @@ libraryDependencies ++= Seq(
   "cloud.drdrdr" %% "oauth-headers" % "0.3",
   "org.typelevel" %% "cats-core" % "1.0.0-RC1",
   loggingScala,
-  loggingLogback
+  loggingLogback,
+  "com.danielasfregola" %% "twitter4s" % "5.5",
+  "com.amazonaws" % "aws-java-sdk-cloudwatch" % awsV
 )

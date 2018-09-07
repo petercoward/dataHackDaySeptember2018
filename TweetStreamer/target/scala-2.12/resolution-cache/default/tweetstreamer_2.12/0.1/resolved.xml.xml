@@ -4,7 +4,7 @@
 		module="tweetstreamer_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20180906104309"
+		publication="20180906141451"
 	>
 		<description>
 		TweetStreamer
@@ -39,5 +39,7 @@
 		<dependency org="org.typelevel" name="cats-core_2.12" rev="1.0.0-RC1" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.scala-logging" name="scala-logging_2.12" rev="3.7.2" conf="compile->default(compile)"/>
 		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.3" conf="compile->default(compile)"/>
+		<dependency org="com.danielasfregola" name="twitter4s_2.12" rev="5.5" conf="compile->default(compile)"/>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudwatch" rev="1.11.376" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
